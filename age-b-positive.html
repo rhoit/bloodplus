@@ -68,8 +68,9 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("data-process/countvsgroup.csv", function(error, data) {
+d3.csv("data-process/age/b-positive.csv", function(error, data) {
 
+  console.log(data);
   data.forEach(function(d) {
     d.second = +d.second;
   });
@@ -131,6 +132,5 @@ d3.csv("data-process/countvsgroup.csv", function(error, data) {
   }
 });
 
-//});
 
 </script>

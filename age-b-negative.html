@@ -37,7 +37,7 @@ label {
 </style>
 <label><input type="checkbox"> Sort values</label>
 <script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/d3.js"></script>
+<script src="http://d3js.org/d3.v3.js"></script>
 
 <script>
 
@@ -68,8 +68,9 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("data-process/countvsgroup.csv", function(error, data) {
+d3.csv("data-process/age/b-negative.csv", function(error, data) {
 
+  console.log(data);
   data.forEach(function(d) {
     d.second = +d.second;
   });
@@ -131,6 +132,5 @@ d3.csv("data-process/countvsgroup.csv", function(error, data) {
   }
 });
 
-//});
 
 </script>
