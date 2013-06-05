@@ -1,13 +1,22 @@
 #!/bin/bash
 
 path="../../data"
-out="../../data-process/countvsgroup.csv"
-rm $out
+out_path="../../data-process/age/"
+
+rm -r $out_path
+mkdir -p $out_path
 
 for i in $path/*; do
-    wc -l $i >> $out
+    name=$(echo $i | sed "s/.*data\/\(.*\).csv/\1/")
+    out=$out_path$name
+    cut -f3 $i > $out.raw
+    # all in one
+    cat $out.raw >> $out_path/total.raw
+    # count and sort
+    sort $out.raw | uniq -c > $out.csv
 done
 
-sed -i "s/.csv$//g; s/data/,/g; s/[.\/]//g; s/ //g" $out
-sed -i "s/\(.*\),\(.*\)/\2,\1/" $out
-cat $out
+sort $out_path/total.raw | uniq -c > $out_path/total.csv
+
+sed -i "s/^ \+\(.*\) \+\(.*\)/\2,\1/" $out_path/*.csv
+# cat $out
