@@ -35,7 +35,7 @@ function drawLayerSelector(){
     }
     var top = $('#map').offset().top + $('#layerHTML').height() + 13;
     var left = $('#map').offset().left + $('#map').width() - $('#layerHTML').width();
-    $('#layerHTML').css({top:top,left:left}).show();
+    $('#layerHTML').css({top:top,left:left}).hide();
 
 }
 

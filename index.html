@@ -16,19 +16,18 @@
        <div class="well sidebar-nav sidebar-nav-fixed">
          <ul class="nav nav-list">
            <li class="nav-header">Sidebar</li>
-           <li><a href="?val=barchart">barchart</a></li>
-           <li><a href="?val=age-ab-negative">age-ab-negative</a></li>
-           <li><a href="?val=age-ab-positive">age-ab-positive</a></li>
-           
-           <li><a href="?val=age-a-negative">age-a-negative</a></li>
-           <li><a href="?val=age-a-positive">age-a-positive</a></li>
-           <li><a href="?val=age-a-negative">age-a-negative</a></li>
-           <li><a href="?val=age-b-positive">age-a-positive</a></li>
-           <li><a href="?val=age-a-negative">age-a-negative</a></li>
-           <li><a href="?val=age-o-positive">age-o-positive</a></li>
-           <li><a href="?val=agetotal">agetotal</a></li>
-           <li><a href="?val=grouptotal">grouptotal</a></li>
-           <li><a href="?val=map">map</a></li>
+           <li><a href="indexanimation.html">Interactive Bar Chart</a></li>
+          	<li><a href="indexmap.html">Map Distribution</a></li>
+           <li><a class='ifram' href="?val=grouptotal">Blood Donors by Group</a></li>
+           <li><a class='ifram' href="?val=agetotal">By Age</a></li>
+           <li><a class='ifram'  href="?val=age-ab-negative">By Age(AB-)</a></li>
+           <li><a class='ifram'  href="?val=age-ab-positive">By Age(AB+)</a></li>
+           <li><a class='ifram'  href="?val=age-a-negative">By Age(A-)</a></li>
+           <li><a class='ifram'  href="?val=age-a-positive">By Age(A+)</a></li>
+           <li><a class='ifram'  href="?val=age-b-negative">By Age(B-)</a></li>
+           <li><a class='ifram'  href="?val=age-b-positive">By Age(B+)</a></li>
+           <li><a class='ifram'  href="?val=age-o-negative">By Age(O-)</a></li>
+           <li><a class='ifram'  href="?val=age-o-positive">By Age(O+-)</a></li>
          </ul>
        </div><!--/.well -->
      </div>
@@ -38,16 +37,7 @@
 			when you do work on something you give it full until its blood donation
 		</div>
 	</div>
-	<?php
-		if(isset($_GET['val'])){
-			$url = $_GET['val'].".html";
-		}
-		else {
-			$url = "map.html";
-		}
-
-	?>
-	<iframe src="map.html" border="0" width="700px" height="450px" frameBorder="0" class="ifr"></iframe>
+	<iframe src="grouptotal.html" border="0" width="700px" height="450px" frameBorder="0" class="ifr"></iframe>
 	</div>
  </div>nav-header
 
@@ -56,7 +46,7 @@
 
 <script>
 
-$('a').on('click', function(e) {
+$('a.ifram').on('click', function(e) {
 	// this = anchor that was clicked
 	
 	console.log($(this).attr("href"));
