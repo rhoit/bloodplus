@@ -1,0 +1,72 @@
+body {
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.sidebar-nav-fixed {
+    position:fixed;
+    top:60px;
+    width:21.97%;
+}
+
+@media (max-width: 767px) {
+    .sidebar-nav-fixed {
+        position:static;
+        width:auto;
+    }
+}
+
+@media (max-width: 979px) {
+    .sidebar-nav-fixed {
+        top:70px;
+    }
+}
+ 
+ /* for demo purposes (fixed top navbar placement in the fiddle. Ok to remove */
+ 
+@media (max-width: 767px) {
+    body {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0;
+    }
+}
+
+.wrapper {
+    margin: 0px;
+}
+
+.navbar {
+    background: #000;
+}
+
+.navbar-inner
+{
+  background: none !important;
+  color: #fff;
+}
+
+.brand a
+{
+  color: #000;
+}
+
+
+header,.header,#header{
+  background: red;
+  color: white;
+  font-size: 15px;
+}
+
+.navFixed {
+    position: fixed;
+    background: #565589;
+}
