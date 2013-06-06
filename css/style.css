@@ -50,3 +50,7 @@ h3{
 .ifr{
 	margin-left: 10px;
 }
+
+.hero-unit {
+	padding: 30px;
+}
