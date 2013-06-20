@@ -17,6 +17,14 @@ __1st runner-up__ of [open nepal][opnp] hakathon!
 
 [hamroblood.org][source]
 
+#### Team
+
+* [manish](https://github.com/manish16)
+* [prashish](https://github.com/prashishh)
+* [rho](https://github.com/rhoit)
+* [surkshya](https://github.com/surakshya)
+
+
 ------
 
 #### :trollface: "When you work, give in fully until its a blood donation" :trollface:
