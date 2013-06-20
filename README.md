@@ -5,24 +5,14 @@
 __1st runner-up__ of [open nepal][opnp] hakathon! 
 
 ### We are [online][host] and our [presentation][talk] too!
+**Note**: All the data has been extracted from [hamroblood.org][source]
 
-#### Visualizations
+#### Hackathon Team
 
-- D3.js Bar Charts
-- D3.js Hierarchial Chart
-- [Nepal Geo Map][geonp]
-- Twitter Bootstrap
-
-#### Source
-
-[hamroblood.org][source]
-
-#### Team
-
-* [manish](https://github.com/manish16)
-* [prashish](https://github.com/prashishh)
-* [rho](https://github.com/rhoit)
-* [surkshya](https://github.com/surakshya)
+- [manish](https://github.com/manish16)
+- [prashish](https://github.com/prashishh)
+- [rho](https://github.com/rhoit)
+- [surkshya](https://github.com/surakshya)
 
 
 ------
